@@ -1,0 +1,119 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('../images/fashion_girls.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff1493;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn-main:hover {
+    background-color: #ff85b4;
+}
+
+main {
+    padding: 20px;
+}
+
+.trend-card {
+    background-color: #ffe4e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trend-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ff69b4;
+}
+
+.contact-form button {
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff85b4;
+}
