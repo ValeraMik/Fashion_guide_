@@ -1,119 +1,123 @@
+/* Общий стиль */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #fff3f3;
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-header {
+/* Шапка */
+.main-header {
     background-color: #ff69b4;
-    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.main-header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
-    display: inline;
+.main-header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.main-header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
-.hero {
-    background-image: url('../images/fashion_girls.jpg');
+.main-header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Начальная страница */
+.center-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../images/fashion_girls.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
     color: #fff;
-    text-align: center;
-    padding: 150px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero h2 {
-    font-size: 3em;
+.center-header h1 {
+    font-size: 3.5em;
     margin: 0;
-}
-
-.hero p {
-    font-size: 1.5em;
 }
 
 .btn-main {
     display: inline-block;
-    padding: 10px 30px;
-    background-color: #ff1493;
-    color: #fff;
-    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 30px;
     font-size: 1.2em;
-    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #ff1493, #ff69b4);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn-main:hover {
-    background-color: #ff85b4;
+    background: linear-gradient(to right, #ff69b4, #ff85b4);
+    transform: scale(1.1);
 }
 
-main {
+/* Страница "Тренды" */
+.trends {
+    background-color: #fff3f3;
     padding: 20px;
+    text-align: center;
 }
 
 .trend-card {
-    background-color: #ffe4e1;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Занимают почти всю ширину */
+    max-width: 600px; /* Ограничение ширины */
+    margin: 20px auto; /* Центрирование карточек */
+    background-color: #fff;
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .trend-card img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #ff69b4;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffe4e1;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.contact-form input, 
-.contact-form textarea {
     width: 100%;
-    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.trend-card h3 {
+    font-size: 1.5em;
+    color: #ff1493;
     margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ff69b4;
 }
 
-.contact-form button {
-    background-color: #ff1493;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
+.trend-card p {
+    font-size: 1.2em;
+    color: #333;
+    padding: 0 10px 20px;
 }
 
-.contact-form button:hover {
-    background-color: #ff85b4;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .trend-card {
+        width: 95%;
+    }
 }
